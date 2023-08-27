@@ -17,5 +17,7 @@ Config(
         "libtranslate.so",
         "libkidex.so",
         "libdictionary.so",
-    ]
+        "libwebsearch.so",
+        "librandr.so"
+  ]
 )
