@@ -62,4 +62,7 @@ return {
          },
       },
    },
+   {
+      "lambdalisue/suda.vim"
+   }
 }
