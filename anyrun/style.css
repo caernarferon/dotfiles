@@ -5,7 +5,9 @@
 box#main {
   border-radius: 20px;
   background-color: rgb(17, 17, 27);
-  border: 2px solid #cba6f7;
+  border: 2px solid;
+  border-color: #cba6f7;
+  
 }
 
 entry#entry {
