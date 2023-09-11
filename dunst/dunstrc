@@ -1,0 +1,18 @@
+[global]
+format = "<b>%s</b>\n%b"
+
+icon_path = "~/.local/share/icons/"
+icon_theme = WhiteSur
+max_icon_size = 64
+enable_recursive_icon_lookup = true
+
+origin = top-right
+offset = 22x22
+frame_width = 2
+frame_color = "#cba6f7"
+separator_color= frame
+font = "Torus"
+corner_radius = 12
+background = "#11111B"
+foreground = "#CDD6F4"
+highlight = "#cba6f7"
