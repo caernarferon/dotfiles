@@ -1,0 +1,91 @@
+{
+  "layer": "top",
+  "position": "top", 
+  "height": 40,
+  "margin-top": 5,
+  "margin-left": 5,
+  "margin-right": 5,
+
+  "modules-right": [
+    "hyprland/language",
+    "wireplumber",
+    "battery",
+    "network"
+  ],
+  "modules-center": [ 
+    "clock",
+    "mpris"
+  ],
+  "modules-left": [ 
+    "image",
+    "hyprland/workspaces",
+    "tray"
+  ],
+
+  "hyprland/language": {
+    "format": "{}",
+    "keyboard-name": "at-translated-set-2-keyboard"
+  },
+  "mpris": {
+    "format": "{player_icon} {title} - {artist}",
+    "format-paused": "{status_icon} {title} - {artist}",
+    "player-icons": {
+      "default": " ",
+      "mpv": " ",
+      "spotify": " " 
+    },
+    "status-icons": {
+      "paused": "⏸"
+    }
+  },
+
+  "image": {
+     "path": "/home/nixer/.config/waybar/images/archbtw.svg"
+  },
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+    "format": "{}"
+  },
+  "tray": {
+    "icon-size": 13,
+    "spacing": 10
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "interval": "1",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon}  {capacity}%",
+    "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
+  },
+  "clock": {
+   "format": "{:   %I:%M %p     %Y-%m-%d}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "󰤨  {essid} ({signalStrength}%)",
+    "tooltip-format-wifi": "{ifname} via {gwaddr}",
+    "format-ethernet": "󰈀   Connected",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "⚠  Disconnected",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+
+  "wireplumber": {
+    "format": "{icon}  {volume}%",
+    "tooltip": true,
+    "tooltip-format": "{volume}",
+    "format-muted": "  Muted",
+    "on-click": "swayosd-client --output-volume mute-toggle",
+    "format-icons": [ "", "", ""]
+  }
+}
