@@ -1,9 +1,0 @@
-{
-    "window.titleBarStyle": "custom",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "GrunBoxTheme",
-    "[python]": {
-        "diffEditor.ignoreTrimWhitespace": false
-    }
-}

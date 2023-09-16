@@ -1,2 +1,0 @@
-(defpoll time :interval "10s"
-  "date '+%I:%M %b %d, %Y'")

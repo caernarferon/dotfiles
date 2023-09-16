@@ -1,9 +1,0 @@
-{
-    "window.titleBarStyle": "custom",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Gruvbox Dark Hard",
-    "[python]": {
-        "diffEditor.ignoreTrimWhitespace": false
-    }
-}
