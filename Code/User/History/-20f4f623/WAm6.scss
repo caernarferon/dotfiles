@@ -1,0 +1,17 @@
+* {
+    all: unset;
+    font-family: "Torus", monospace
+}
+
+.bar {
+    background-color: #11111b;
+    border-radius: 0px 0px 15px 15px;
+    border-width: 2px;
+    border-style:solid;
+    border-color: #111111 #cba6f7 #cba6f7 #cba6f7;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1s 
+}
+
+.clock {
+    color: #cdd6f4;
+}

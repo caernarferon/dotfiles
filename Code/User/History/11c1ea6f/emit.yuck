@@ -1,0 +1,14 @@
+(defwindow bar
+    :monitor 0
+    :geometry (geometry
+                        :y "0%"
+                        :width "99.47%"
+                        :height "4%"
+                        :anchor "top center")
+    :stacking "fg"
+    :exclusive true
+    :class "bar"
+    :style "${ANIM_ENTER[0]}"
+    (bar)
+)
+

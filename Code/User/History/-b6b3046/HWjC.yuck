@@ -1,0 +1,18 @@
+(defwidget greeter [?text name]
+    (box :orientation "horizontal"
+         :halign "center"
+      text
+      (button :onclick "notify-send 'Hello' 'Hello, ${name}'"
+        "Greet")))
+  
+
+
+(defwidget labeled-container [name]
+    (box :class "container"
+        name
+        (children)))
+          
+(defwidget bar[]
+    (box
+    (labeled-container :name "jim jones")
+    (greeter)))

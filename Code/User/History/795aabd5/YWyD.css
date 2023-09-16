@@ -1,0 +1,15 @@
+* {
+  font-family: 'Noto Sans', monospace;
+  font-size: 16px;
+  color: #b4befe;
+  background-color: #11111b;
+  margin: 12px;
+}
+
+window#waybar {
+  background-color: rgba(0,0,0,0);
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: #cba4f7;
+}
+

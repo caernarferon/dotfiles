@@ -1,0 +1,30 @@
+2023-09-16 16:51:04.115 [info] Log level: Info
+2023-09-16 16:51:04.115 [info] Validating found git in: "git"
+2023-09-16 16:51:04.115 [info] Using git "2.42.0" from "git"
+2023-09-16 16:51:04.115 [info] > git rev-parse --show-toplevel [5ms]
+2023-09-16 16:51:04.115 [info] > git rev-parse --git-dir --git-common-dir [8ms]
+2023-09-16 16:51:04.115 [info] Open repository: /home/nixer/.config
+2023-09-16 16:51:04.115 [info] > git rev-parse --show-toplevel [1ms]
+2023-09-16 16:51:04.115 [info] > git config --get commit.template [5ms]
+2023-09-16 16:51:04.127 [info] > git rev-parse --show-toplevel [8ms]
+2023-09-16 16:51:04.138 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [12ms]
+2023-09-16 16:51:04.260 [info] > git status -z -uall [119ms] (cancelled)
+2023-09-16 16:51:04.646 [info] > git check-ignore -v -z --stdin [1ms]
+2023-09-16 16:51:07.887 [info] > git show --textconv :nvim/lazy-lock.json [6ms]
+2023-09-16 16:51:07.888 [info] > git ls-files --stage -- /home/nixer/.config/nvim/lazy-lock.json [1ms]
+2023-09-16 16:51:07.894 [info] > git cat-file -s a178fa759d4e8d93d71520fa0009d72beb79d362 [1ms]
+2023-09-16 16:51:08.793 [info] > git config --get commit.template [2ms]
+2023-09-16 16:51:08.800 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2023-09-16 16:51:08.886 [info] > git status -z -uall [82ms] (cancelled)
+2023-09-16 16:52:10.227 [info] > git show --textconv :nvim/init.lua [14ms]
+2023-09-16 16:52:10.229 [info] > git ls-files --stage -- /home/nixer/.config/nvim/init.lua [4ms]
+2023-09-16 16:52:10.237 [info] > git cat-file -s 1240007400f8ac7ff410ef46c4eb71ee5945f75e [1ms]
+2023-09-16 16:52:10.753 [info] > git check-ignore -v -z --stdin [3ms]
+2023-09-16 16:52:11.627 [info] > git check-ignore -v -z --stdin [3ms]
+2023-09-16 16:52:12.611 [info] > git check-ignore -v -z --stdin [1ms]
+2023-09-16 16:52:13.233 [info] > git show --textconv :nvim/lua/plugins/coding.lua [12ms]
+2023-09-16 16:52:13.235 [info] > git ls-files --stage -- /home/nixer/.config/nvim/lua/plugins/coding.lua [3ms]
+2023-09-16 16:52:13.240 [info] > git cat-file -s d3c2fd5f17df3e4f73f6354c4050df05a5af584a [1ms]
+2023-09-16 16:52:16.684 [info] > git show --textconv :nvim/lua/plugins/lines.lua [15ms]
+2023-09-16 16:52:16.686 [info] > git ls-files --stage -- /home/nixer/.config/nvim/lua/plugins/lines.lua [4ms]
+2023-09-16 16:52:16.697 [info] > git cat-file -s c11859a033968fe494fa8d9ae8c267feef079639 [2ms]

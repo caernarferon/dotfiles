@@ -1,0 +1,28 @@
+(defpoll time :interval "10s"
+  "date '+%I:%M %b %d, %Y'")
+
+
+(defwidget greeter [?text name]
+    (box :orientation "horizontal"
+         :halign "center"
+      text
+      (button :onclick "notify-send 'Hello' 'Hello, ${name}'"
+        "Greet")))
+  
+
+
+(defwidget labeled-container [name]
+    (box :class "container"
+        name
+        (children)))
+          
+(defwidget bar[]
+    (box
+    (labeled-container :name "bob" )
+    (button :onclick "notify-send 'you got' mail"
+    "click me")
+    (greeter :name "jim jonas"
+            :text "button" )
+    (time)))
+
+

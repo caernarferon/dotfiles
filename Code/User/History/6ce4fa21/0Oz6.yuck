@@ -1,0 +1,31 @@
+
+(defwidget bar[]
+    (centerbox
+        (clock)
+        (tray)
+        (ball)
+    )
+)
+
+(defwidget clock []
+    (eventbox 
+        :class "clock"
+        :onclick "./scripts/togglebar.sh"
+        :halign "center"
+        (label 
+            :class "clock hour" 
+            :text {formattime(EWW_TIME, "%I:%M", "America/Edmonton")}
+        )
+    )
+)
+(defwidget tray []
+    (box
+        :class "tray"
+        :spacing 5
+        :halign "end"
+        :valign "center"
+        (systray :pack-direction "ttb")))
+
+(defwidget ball[]
+    (box)
+)

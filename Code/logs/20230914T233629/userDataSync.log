@@ -1,0 +1,24 @@
+2023-09-14 23:36:30.772 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
+2023-09-14 23:36:30.772 [info] Auto Sync is enabled.
+2023-09-14 23:36:30.772 [info] Auto Sync: Suspended until auth token is available.
+2023-09-14 23:36:31.621 [info] Auto Sync: Triggered by Interval
+2023-09-14 23:36:31.621 [info] Sync started.
+2023-09-14 23:36:32.075 [info] Sync done. Took 455ms
+2023-09-14 23:36:48.616 [info] Auto Sync: Triggered by Activity
+2023-09-14 23:36:48.616 [info] Sync started.
+2023-09-14 23:36:48.682 [info] Sync done. Took 67ms
+2023-09-14 23:37:06.662 [info] Auto Sync: Triggered by Activity
+2023-09-14 23:37:06.662 [info] Sync started.
+2023-09-14 23:37:06.724 [info] Sync done. Took 61ms
+2023-09-14 23:37:19.881 [info] Auto Sync: Triggered by Activity
+2023-09-14 23:37:19.882 [info] Sync started.
+2023-09-14 23:37:19.941 [info] Sync done. Took 60ms
+2023-09-14 23:38:22.704 [info] Auto Sync: Triggered by Activity
+2023-09-14 23:38:22.704 [info] Sync started.
+2023-09-14 23:38:22.792 [info] Sync done. Took 89ms
+2023-09-14 23:43:08.692 [info] Auto Sync: Triggered by Activity
+2023-09-14 23:43:08.692 [info] Sync started.
+2023-09-14 23:43:08.875 [info] Sync done. Took 183ms
+2023-09-14 23:44:42.700 [info] Auto Sync: Triggered by Activity
+2023-09-14 23:44:42.700 [info] Sync started.
+2023-09-14 23:44:42.752 [info] Sync done. Took 52ms

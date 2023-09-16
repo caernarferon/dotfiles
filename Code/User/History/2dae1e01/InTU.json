@@ -1,0 +1,6 @@
+{
+    "window.titleBarStyle": "custom",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Catppuccin Noctis"
+}

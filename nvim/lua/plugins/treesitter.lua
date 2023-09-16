@@ -15,8 +15,9 @@ return {
                "html",
                "css",
                "comment",
-               "vimdoc",
-               "tsx",
+               "yuck",
+               "markdown",
+               "rust"
             },
             highlight = { enable = true },
             indent = { enable = true },

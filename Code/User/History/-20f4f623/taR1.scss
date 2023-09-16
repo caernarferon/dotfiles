@@ -1,0 +1,22 @@
+* {
+    font-family: "Torus", monospace;
+    all: unset;
+}
+
+.bar {
+    background-color: #11111b;
+    border-radius: 0px 0px 15px 15px;
+    border-width: 2px;
+    border-style:solid;
+    border-color: #111111 #cba6f7 #cba6f7 #cba6f7;
+    transition: 200ms cubic-bezier(0.05,0.7,0.1,1);
+    transition: 250ms cubic-bezier(0,0,0,1);
+}
+
+.clock {
+    color: #cdd6f4;
+}
+
+.tray {
+    margin-right: 15px;
+}

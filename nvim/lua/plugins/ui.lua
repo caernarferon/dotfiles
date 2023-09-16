@@ -1,29 +1,24 @@
 return {
-   {
-      "m4xshen/catppuccinight.nvim",
-      name = "catppuccin",
-      opts = {
-         flavour = "mocha",
-         custom_highlights = function(colors)
-            return {
-               VertSplit = { fg = colors.surface0 },
-            }
-         end,
-      },
-      init = function()
-         vim.cmd.colorscheme("catppuccin")
-      end,
-   },
-   {
-      "rcarriga/nvim-notify",
-      opts = {},
-      config = function()
-         vim.notify = require("notify")
-      end,
-   },
-   {
-      "folke/trouble.nvim",
-      dependencies = { "nvim-tree/nvim-web-devicons" },
-      opts = {},
-   }
+  {
+    "ellisonleao/gruvbox.nvim",
+    name = "gruvbox",
+    init = function()
+      require("gruvbox").setup({
+        contrast  = "dark",
+      })
+      vim.cmd.colorscheme("gruvbox")
+    end,
+  },
+  {
+    "rcarriga/nvim-notify",
+    opts = {},
+    config = function()
+      vim.notify = require("notify")
+    end,
+  },
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {},
+  }
 }

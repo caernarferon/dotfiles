@@ -1,0 +1,59 @@
+
+(defwidget bar[]
+    (centerbox
+        (box)
+        (box)
+        (box)
+    )
+)
+
+(defwidget bar_widget []
+    (centerbox
+      (box
+        :hexpand true
+        (leftspace_widget)
+      )
+      (centerbox
+        (box
+          :orientation "h" :space-evenly false
+          (music_widget)
+        )
+        (box
+          :orientation "h"
+          (dynamiccenter_widget)
+        )
+        (box
+          :orientation "h" :space-evenly false
+          :halign "end"
+          (system_widget)
+        )
+      )
+      (box
+        :hexpand true
+        (dynamicright_widget)
+      )
+    )
+  )
+
+(defwidget clock []
+    (eventbox 
+        :class "clock"
+        :onclick "./scripts/togglebar.sh"
+        :halign "center"
+        (label 
+            :class "clocktime" 
+            :text {formattime(EWW_TIME, "%I:%M", "America/Edmonton")}
+        )
+    )
+)
+(defwidget tray []
+    (box
+        :class "tray"
+        :spacing 5
+        :halign "end"
+        :valign "center"
+        (systray :pack-direction "ttb")))
+
+(defwidget ball[]
+    (box)
+)

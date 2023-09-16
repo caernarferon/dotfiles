@@ -1,0 +1,14 @@
+(defwindow bar
+    :monitor 0
+    :geometry (geometry :x "1%"
+                        :y "1%"
+                        :width "90%"
+                        :height "3%"
+                        :anchor "top center")
+    :stacking "fg"
+    :reserve (struts :distance "40px" :side "top")
+    :exclusive true
+    :class "bar"
+    (bar)
+)
+
