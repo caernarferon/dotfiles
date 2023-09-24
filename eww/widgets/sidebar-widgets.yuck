@@ -1,0 +1,19 @@
+(defwidget sidebar[]
+    (centerbox
+        (box
+            :halign "center"
+            :valign "center"
+            (checkbox
+                :class "checkbox"
+            )
+        )
+        (box
+
+        )
+        (box
+
+        )
+    )
+)
+
+

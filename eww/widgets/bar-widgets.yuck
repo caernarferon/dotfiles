@@ -2,7 +2,7 @@
 (defwidget bar[]
     (centerbox
         (box
-            (box)
+            (window_w)
         )
         (box
             (clock)
@@ -13,33 +13,7 @@
     )
 )
 
-(defwidget bar_widget []
-    (centerbox
-      (box
-        :hexpand true
-        (leftspace_widget)
-      )
-      (centerbox
-        (box
-          :orientation "h" :space-evenly false
-          (music_widget)
-        )
-        (box
-          :orientation "h"
-          (dynamiccenter_widget)
-        )
-        (box
-          :orientation "h" :space-evenly false
-          :halign "end"
-          (system_widget)
-        )
-      )
-      (box
-        :hexpand true
-        (dynamicright_widget)
-      )
-    )
-  )
+
 
 (defwidget clock []
     (eventbox 
@@ -63,3 +37,27 @@
 (defwidget ball[]
     (box)
 )
+
+(defwidget workspaces []
+  (eventbox :onscroll "bash ~/.config/eww/scripts/change-active-workspace {} ${current_workspace}" :class "workspaces-widget"
+    :spacing 5
+    :class workspaces
+    (box :space-evenly true
+      (label :text "${workspaces}${current_workspace}" :visible true)
+      (for workspace in workspaces
+        (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
+          (box :class "workspace-entry ${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
+            (label :text "${workspace.id}")
+            )
+          )
+        )
+      )
+    )
+  )
+(defwidget window_w []
+  (box
+    (label :text "${window}"
+    )
+  )
+)
+
