@@ -82,13 +82,6 @@ return {
       "roobert/tailwindcss-colorizer-cmp.nvim",
    },
    {
-      "lukas-reineke/indent-blankline.nvim",
-      branch = "v3",
-      config = function()
-         require("ibl").setup()
-      end,
-   },
-   {
       "github/copilot.vim",
       config = function()
          vim.cmd('imap <silent><script><expr> <C-CR> copilot#Accept("\\<CR>")')
