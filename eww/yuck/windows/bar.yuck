@@ -1,0 +1,49 @@
+(defwidget group []
+  (box 
+    :class "group"
+    :space-evenly false
+    :spacing 15
+    :orientation "v"
+    :width 40
+    (network)
+  )
+)
+
+(defwidget left []
+  (box 
+    :space-evenly false 
+    :halign "center"
+    :valign "start" 
+    :spacing 15
+    :orientation "v"
+  )
+)
+
+(defwidget center []
+  (box 
+    :halign "center"
+    :valign "center" 
+    :orientation "v"
+    (clock)
+  )
+)
+
+(defwidget right []
+  (box 
+    :space-evenly false 
+    :halign "center"
+    :valign "end" 
+    :spacing 10
+    :orientation "v"
+  )
+)
+
+(defwidget bar []
+  (box 
+    :class "bar"
+    :orientation "v"
+    (left)
+    (center)
+    (right)
+  )
+)

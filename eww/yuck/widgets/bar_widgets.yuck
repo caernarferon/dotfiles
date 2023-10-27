@@ -1,0 +1,56 @@
+
+
+(defwidget clock []
+  (box 
+    :class "clock"
+    :orientation "v"
+    :space-evenly false
+    :spacing 5
+    :halign "center"
+    (label 
+      :class "clock hour" 
+      :text {formattime(EWW_TIME, "%I", "America/Edmonton")}
+    )
+    (box :class "timebox" :spacing 4
+      (box :class "timebox magenta" "")
+      (box :class "timebox green" "")
+      (box :class "timebox yellow" "")
+    )
+    (label 
+      :class "clock minute" 
+      :text {formattime(EWW_TIME, "%M", "America/Edmonton")}
+    )
+  )
+)
+
+
+(defwidget network []
+  (label 
+    :class "network ${network == "down" ? "down" : "up"}"
+    :text {network == "down" ? "" : ""}
+    :tooltip "${round(EWW_NET.enp4s0.NET_DOWN / 1000000, 2)}MB"
+  )
+)
+
+
+(defwidget workspaces []
+  (box 
+    :class "workspaces"
+    :orientation "v"
+    :width 40
+    :height 250
+    (for workspace in {hyprland.workspaces}
+      (eventbox
+        :cursor "pointer"
+        :onscroll "echo {} | sed -e 's/up/-1/g' -e 's/down/+1/g' | xargs hyprctl dispatch workspace"
+        :halign "center"
+        :valign "center"
+        :vexpand true
+        (button
+          :onclick "hyprctl dispatch workspace ${workspace.id}"
+          :class "workspace ${workspace.id == hyprland.active ? "active" : workspace.windows > 0 ? "occupied" : "empty"}"
+        )
+      )
+    )
+  )
+)

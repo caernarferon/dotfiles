@@ -1,10 +1,20 @@
-(include "./windows/bar.yuck")
+(defvar     bell_rev        false)
+(defvar     updates_rev     false)
+(defvar     dock_hovered    false)
+(defvar     dock_rev        true)
+(defvar     apps            "{}")
+(defvar     notifications   "{}")
+(defvar     mpris           "{}")
+(defvar     picture         "assets/getou.jpg")
 
-(include "./windows/sidebar.yuck")
+(deflisten  details         `scripts/details`)
+(deflisten  network         `scripts/network`)
+(deflisten  hyprland        `scripts/hyprland.py`)
+(deflisten  weather         `scripts/weather.py`)
+(deflisten  mpris_positions `scripts/positions.py`)
 
-(include "./widgets/bar-widgets.yuck")
+(defpoll    date            :interval "1h"   :initial `{"day": 1, "month": 1, "year": 1}` `date +'{"day": "%d", "month": "%m", "year": "%Y"}'`)
 
-(include "./widgets/sidebar-widgets.yuck")
-
-(include "./poll.yuck")
-
+(include    "yuck/widgets.yuck")
+(include    "yuck/windows.yuck")
+(include    "yuck/setup.yuck")
