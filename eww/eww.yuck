@@ -1,20 +1,2 @@
-(defvar     bell_rev        false)
-(defvar     updates_rev     false)
-(defvar     dock_hovered    false)
-(defvar     dock_rev        true)
-(defvar     apps            "{}")
-(defvar     notifications   "{}")
-(defvar     mpris           "{}")
-(defvar     picture         "assets/getou.jpg")
-
-(deflisten  details         `scripts/details`)
-(deflisten  network         `scripts/network`)
-(deflisten  hyprland        `scripts/hyprland.py`)
-(deflisten  weather         `scripts/weather.py`)
-(deflisten  mpris_positions `scripts/positions.py`)
-
-(defpoll    date            :interval "1h"   :initial `{"day": 1, "month": 1, "year": 1}` `date +'{"day": "%d", "month": "%m", "year": "%Y"}'`)
-
-(include    "yuck/widgets.yuck")
-(include    "yuck/windows.yuck")
-(include    "yuck/setup.yuck")
+(include "windows/bar.yuck")
+(include "widgets/bar_widgets.yuck")
